@@ -1,1 +1,1 @@
-# redirect67373net
+# redirect for 67373.net
