@@ -26,11 +26,11 @@ html img{
 
 #invertBackGround{
   width: 200vw;
-  height: 100vh;
+  height: 100%;
 /*   background-color: white; */
   position: fixed;
   left: -100vw;
-  top: 0;
+  top: 0vh;
   z-index: -100;
   transition-property: background-color filter;
   transition-duration: 1s;
