@@ -3,7 +3,6 @@ html {
   margin: auto;
   padding: 1rem;
   font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif; /* 移动端使用 */
-  background-color: white;
   transition-property: filter;
   transition-duration: 1s;
 }
@@ -15,10 +14,28 @@ html img{
 
 .htmlNightMode{
   filter: invert(100%) brightness(70%);
+/*   background:black; */
 }
 .htmlNightMode img {
   filter: invert(100%);
 }
+
+.htmlNightMode #invertBackGround {
+  filter: invert(100%);
+}
+
+#invertBackGround{
+  width: 200vw;
+  height: 100vh;
+/*   background-color: white; */
+  position: fixed;
+  left: -100vw;
+  top: 0;
+  z-index: -100;
+  transition-property: background-color filter;
+  transition-duration: 1s;
+}
+
 footer {
   font-size: 0.8rem;
   width: fit-content;

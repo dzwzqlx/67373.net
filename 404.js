@@ -1,12 +1,18 @@
+// https://skalman.github.io/UglifyJS-online/
 // console.log(document.URL);
 document.title = document.title.replace("2022", new Date().getFullYear()); // 换成今年
 function nightModeFunction(thisNode){
   var oldClass = document.querySelector("html").getAttribute("class");
+  var oldClass2 = document.querySelector("#invertBackGround").getAttribute("class");
+  console.log(oldClass, oldClass2);
   if(thisNode.innerHTML == "开灯"){
     document.querySelector("html").setAttribute("class", oldClass.replace(" htmlNightMode", ""));
+    // document.querySelector("#invertBackGround").setAttribute("class", oldClass2.replace(" htmlNightMode", ""));
+    document.querySelector("#invertBackGround").style.backgroundColor='white';
     thisNode.innerHTML = "关灯";
   }else{
     document.querySelector("html").setAttribute("class", oldClass+" htmlNightMode");
+    document.querySelector("#invertBackGround").style.backgroundColor='black';
     thisNode.innerHTML = "开灯";
   }
 }
