@@ -4,12 +4,12 @@ html {
   padding: 1rem;
   font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif; /* 移动端使用 */
   transition-property: filter;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 
 html img{
   transition-property: filter;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 
 .htmlNightMode{
@@ -33,7 +33,7 @@ html img{
   top: 0vh;
   z-index: -100;
   transition-property: background-color filter;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 
 footer {

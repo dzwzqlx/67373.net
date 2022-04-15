@@ -1,5 +1,6 @@
 // https://skalman.github.io/UglifyJS-online/
 // console.log(document.URL);
+
 document.title = document.title.replace("2022", new Date().getFullYear()); // 换成今年
 function nightModeFunction(thisNode){
   var oldClass = document.querySelector("html").getAttribute("class");
