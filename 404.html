@@ -40,12 +40,11 @@
             "<div style='width:150px;height:150px;margin:auto'><img src='https://7769-wildcinema-6ggi717ue20fb424-1306579026.tcb.qcloud.la/otherRes/67373.net/%E6%87%B52-2%20(1).png?sign=658b2d149c18fc11a1eaba3253374726&t=1649983242'>" +
             "</div><br/>以下地址不存在，请检查~<br/><span style='font-size:1.2rem'>" +
             document.URL +
-            "</span><br/>将在 <span id='countdown' style='color:green'>5</span> 秒后回到首页</div>";
+            "</span><div style='font-size:1.5rem; margin: 0.5rem auto;'><div id='countdown' style='color:green;font-size:2rem;margin:1rem auto;'>5</div>秒后回到首页</div></div>";
           var countdown = 4;
           var countNode = document.querySelector("#countdown");
           var counter = setInterval(() => {
             countNode.innerText = countdown--;
-            console.log(countdown);
             if (countdown < 0) {
               clearInterval(counter);
               window.location = "https://67373.net";
