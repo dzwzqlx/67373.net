@@ -28,8 +28,7 @@ dfsafad [content.md](content.md)  [fdsafdaf.md](ceshi\fdsafdaf.md)
 
 <pre><code>title，value，callBack可以缺省</code></pre>
 
+![image-20220516014650670](res/dfdaffdsaf/image-20220516014650670.png)
 
+![image-20220516031533093](res/dfdaffdsaf/image-20220516031533093.png)
 
-
-
-![image-20220516014650670](index/image-20220516014650670.png)
