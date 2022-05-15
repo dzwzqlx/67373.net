@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html>
+  <head>
+    <title>正在打开……</title>
+    <style type="text/css">
+      html {
+        font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif; /* 移动端使用 */
+      }
+    </style>
+    <script type="text/javascript">
+      var path = document.URL;
+      path = path.substring(path.lastIndexOf("/") + 1, 100);
+      path = path.toLowerCase();
+      console.log(path);
+      // var redirects = [
+      //   [["fankui"], ["fk"], "https://shimo.im/forms/ZzkLVwQmYYcvy3QE/fill"],
+      //   [["chaohua"], ["ch"], "https://shimo.im/forms/ZzkLVwQmYYcvy3QE/fill"],
+      //   [["email"], [false], ""],
+      //   [[""], [false], ""],
+      // ]
+
+      function re(word) {
+        return path.search(word) != -1;
+      }
+
+      if (re("fankui")) {
+        window.location = "https://shimo.im/forms/ZzkLVwQmYYcvy3QE/fill";
+      } else if (re("chaohua")) {
+        window.location = "https://huati.weibo.com/k/陈一发儿";
+      } else if (re("jietu")) {
+        window.location = "https://husteducn-my.sharepoint.com/:f:/g/personal/theashes_hust_edu_cn/EvzqZWgEwTFPt1EMTeVN-kMB9CbqI1UlCtDyej0yzvSuhg?e=wFtBgM";
+      } else if (re("ziyuan")) {
+        window.location = "https://husteducn-my.sharepoint.com/:f:/g/personal/theashes_hust_edu_cn/EiHE3oGNF_NHlYYNtIzw3wEB2ezUoGJCuDB7wXFw-cjhhA?e=UiFgcY";
+      } else {
+        window.onload = function () {
+          document.querySelector("body").innerHTML =
+            "<div style='font-size:1.2rem;line-height:2rem; width:fit-content; margin:10vh auto;text-align:center;'>" +
+            "<div style='width:150px;height:150px;margin:auto'><img src='https://7769-wildcinema-6ggi717ue20fb424-1306579026.tcb.qcloud.la/otherRes/67373.net/%E6%87%B52-2%20(1).png?sign=658b2d149c18fc11a1eaba3253374726&t=1649983242'>" +
+            "</div><br/>以下地址不存在，请检查~<br/><span style='font-size:1.2rem'>" +
+            document.URL +
+            "</span><div style='font-size:1.5rem; margin: 0.5rem auto;'><div id='countdown' style='color:green;font-size:2rem;margin:1rem auto;'>6</div>秒后回到 <a href='https://67373.net'>首页</a></div></div>";
+          var countdown = 5;
+          var countNode = document.querySelector("#countdown");
+          var counter = setInterval(() => {
+            countNode.innerText = countdown--;
+            if (countdown < 0) {
+              clearInterval(counter);
+              window.location = "https://67373.net";
+            }
+          }, 1000);
+        };
+      }
+    </script>
+  </head>
+</html>
+
+<!--
+  <head>
+    <meta http-equiv="Refresh" content="0; URL=https://67373.net" />
+  </head>
+-->
