@@ -33,7 +33,9 @@
         window.location = "https://husteducn-my.sharepoint.com/:f:/g/personal/theashes_hust_edu_cn/EiHE3oGNF_NHlYYNtIzw3wEB2ezUoGJCuDB7wXFw-cjhhA?e=UiFgcY";
       } else {
           window.onload = function () {
-          window.location = path.replace('://67373.net', '://fa.67373.net');
+          let newUrl = path.replace('://67373.net', '://fa.67373.net');
+          console.log(newUrl);
+          window.location = newUrl;
           return;
           document.querySelector("body").innerHTML =
             "<div style='font-size:1.2rem;line-height:2rem; width:fit-content; margin:10vh auto;text-align:center;'>" +
