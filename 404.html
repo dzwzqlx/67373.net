@@ -22,8 +22,17 @@
       function re(word) {
         return path.search(word) != -1;
       }
-
-      if (re("fankui")) {
+      if(re(".well-known/acme-challenge/")) {
+        let text = "4JAAP4l-1eG-XhAVVO-MshAqKH8zgOcEvyw-w-gChGQ.RMMywZ0m6Fi_i5npgINdg3l57H7rmw2ZcyXrPA2PYeQ";
+        let filename = "4JAAP4l-1eG-XhAVVO-MshAqKH8zgOcEvyw-w-gChGQ";
+        let element = document.createElement('a');
+        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+        element.setAttribute('download', filename);
+        element.style.display = 'none';
+        document.body.appendChild(element);
+        element.click();
+        document.body.removeChild(element);
+      } else if (re("fankui")) {
         window.location = "https://shimo.im/forms/ZzkLVwQmYYcvy3QE/fill";
       } else if (re("chaohua")) {
         window.location = "https://huati.weibo.com/k/陈一发儿";
